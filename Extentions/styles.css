@@ -29,6 +29,11 @@ h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
+img{
+    user-select: none;
+
+}
+
 .Header{
     z-index: 10;
     display: flex;
