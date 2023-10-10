@@ -1,5 +1,5 @@
 body{
-    height: 290vw;
+    height: 214vw;
     background-color: #18181B;
     margin: 0;
 }
@@ -45,7 +45,7 @@ img{
     font-family: Arial;
 }
 
-.HomeB, .AboutB, .ResumeB, .SkillB, .AwardB, .ContactB{
+.HomeB, .AboutB, .ResumeB, .AwardB, .ContactB{
     font-size: 1.2vw;
     color: transparent; 
     -webkit-text-stroke: 0.02vw #fff;
@@ -54,7 +54,7 @@ img{
     border: none;
     transition: 0.2s;
 }
-.HomeB:hover, .AboutB:hover, .ResumeB:hover, .SkillB:hover, .AwardB:hover, .ContactB:hover{
+.HomeB:hover, .AboutB:hover, .ResumeB:hover, .AwardB:hover, .ContactB:hover{
     text-shadow: 0px 0px 1vw #ffffff;
     transform: scale(1); 
 }

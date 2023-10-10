@@ -16,7 +16,7 @@ function updateHighlighting() {
     buttons.forEach(function(btn) {
         var k = parseInt(btn.getAttribute('data-scroll'));
         var y = k * (window.innerWidth / 100);
-        var offset = 25 * (window.innerWidth / 100); 
+        var offset = 21 * (window.innerWidth / 100); 
         if (currentScroll >= y - offset && currentScroll <= y + offset) {
             btn.classList.add('highlight');
         } else {
@@ -31,7 +31,7 @@ function updateHighlighting() {
 const backToTopButton = document.getElementById('back-to-top');
             
 function updateBackToTopButtonVisibility() {
-    if (window.scrollY >= 230 * (window.innerWidth / 100)) {
+    if (window.scrollY >= 160 * (window.innerWidth / 100)) {
         backToTopButton.style.display = 'block';
     } else {
         backToTopButton.style.display = 'none';
