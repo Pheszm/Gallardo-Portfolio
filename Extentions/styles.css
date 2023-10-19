@@ -1,6 +1,6 @@
 body{
     height: 214vw;
-    background-color: #18181B;
+    background-color: #3AAFA9;
     margin: 0;
 }
 
@@ -12,12 +12,12 @@ html::-webkit-scrollbar {
     width: 11px;
 }
 html::-webkit-scrollbar-track {
-    background-color: #1b1b1b;
+    background-color: #17252A;
 }
 html::-webkit-scrollbar-thumb {
     background-color: #eeeeee;
     border-radius: 5px;
-    border: solid 4px #093781;
+    border: solid 4px #2b7a78;
 }
 html::-webkit-scrollbar-thumb:hover {
     background-color: #b4b4b4;
@@ -34,8 +34,8 @@ img{
 
 }
 
-.Header{
-    z-index: 10;
+#Header{
+    z-index: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@ img{
     padding: 1vw;
     background: none;
     border: none;
-    transition: 0.2s;
+    transition: 0s;
 }
 .HomeB:hover, .AboutB:hover, .ResumeB:hover, .AwardB:hover, .ContactB:hover{
     text-shadow: 0px 0px 1vw #ffffff;
@@ -64,11 +64,6 @@ img{
     text-shadow: 0px 0px 0vw #ffffff;
 }
 
-.blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #093781;
-    z-index: -100;
-}
 
 .Title1{
     opacity: 1;

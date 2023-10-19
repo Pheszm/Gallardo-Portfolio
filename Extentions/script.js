@@ -25,6 +25,19 @@ function updateHighlighting() {
     });  
 }
 
+///HEADER NAVIGATION VISIBILITY
+const NavigationBar = document.getElementById('Header');
+            
+function HeaderGoesVisible() {
+    if (window.scrollY >= 40 * (window.innerWidth / 100)) {
+        NavigationBar.style.visibility = 'visible';
+    } else {
+        NavigationBar.style.visibility = 'hidden';
+    }
+}
+window.addEventListener('load', HeaderGoesVisible);
+window.addEventListener('scroll', HeaderGoesVisible);
+
 
 
 ///BACK TO TOP FUNCTION
