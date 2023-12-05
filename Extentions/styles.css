@@ -34,7 +34,7 @@ img{
 
 }
 
-#Header{
+#Header {
     z-index: 10;
     display: flex;
     align-items: center;
@@ -43,8 +43,36 @@ img{
     height: 4vw;
     position: fixed;
     font-family: Arial;
-}
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #Header.visible {
+    opacity: 1;
+  }
 
+#About {
+    background-color: transparent;
+    position: absolute;
+    top: 44vw;
+    width: 100%;
+    height: 49vw;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+  
+  
+  #ResumeSection {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+  
+  #AwardsSection {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+  
+  
 .HomeB, .AboutB, .ResumeB, .AwardB, .ContactB{
     font-size: 1.2vw;
     color: transparent; 
@@ -70,57 +98,46 @@ img{
     z-index: -100;
 }
 
-.Title1{
+
+.Title1 {
     opacity: 1;
-    animation: Title1Anim 10s infinite; 
-}
-.Title2{
+    animation: Title1Anim 5s infinite;
+  }
+  
+  .Title2 {
     opacity: 0;
-    animation: Title2Anim 10s infinite; 
-}
-@keyframes Title1Anim {
-    0% {
-        opacity: 0;}
-    14.285% {
-        opacity: 0;}
-    28.57% {
-        opacity: 1;}
-    42.855% {
-        opacity: 1;}
-    57.14% {
-        opacity: 0;}
-    71.425% {
-        opacity: 0;}
-    85.71% {
-        opacity: 1;}
-    100% {
-        opacity: 1;}
-}
-@keyframes Title2Anim {
-    0% {
-        opacity: 1;}
-    14.285% {
-        opacity: 1;}
-    28.57% {
-        opacity: 0;}
-    42.855% {
-        opacity: 0;}
-    57.14% {
-        opacity: 1;}
-    71.425% {
-        opacity: 1;}
-    85.71% {
-        opacity: 0;}
-    100% {
-        opacity: 0;}
-}
+    animation: Title2Anim 5s infinite;
+  }
+  
+  @keyframes Title1Anim {
+    0%, 20%, 100% {
+      opacity: 0;
+    }
+    28.57%, 85.71% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes Title2Anim {
+    0%, 20%, 100% {
+      opacity: 1;
+    }
+    28.57%, 85.71% {
+      opacity: 0;
+    }
+  }
   
   
   
   
-
-
-
+#ContactSection {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #ContactSection.show {
+    opacity: 1;
+  }
+  
 
 
 
@@ -167,3 +184,26 @@ img{
   }
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*RESPONSIVE AREA*/
+  @media screen and (max-width: 600px) {
+    .Home h1{
+        font-size: 20vw; 
+    }
+
+}
