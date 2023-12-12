@@ -81,6 +81,7 @@ img{
     background: none;
     border: none;
     transition: 0.0s;
+    z-index: 101;
 }
 .HomeB:hover, .AboutB:hover, .ResumeB:hover, .AwardB:hover, .ContactB:hover{
     text-shadow: 0px 0px 1vw #ffffff;
@@ -206,4 +207,116 @@ img{
         font-size: 20vw; 
     }
 
+}
+
+
+.Technopreneur {
+  background-image: url('../images/WhiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition: scale 0.3s ease, background-image 0.3s ease;
+}
+
+
+.Technopreneur:hover {
+  scale: 1.6;
+  background-image: url('../images/TechnoCertificate.jpg');
+  z-index: 1;
+}
+
+.Technopreneur:hover * {
+  visibility: hidden; 
+}
+
+
+
+
+
+.SecondarySchool {
+  background-image: url('../images/WhiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition: scale 0.3s ease, background-image 0.3s ease;
+}
+
+
+.SecondarySchool:hover {
+  scale: 1.6;
+  background-image: url('../images/SRCBBackground.png');
+  z-index: 1;
+}
+
+.SecondarySchool:hover * {
+  visibility: hidden; 
+}
+
+
+
+
+
+
+
+.BalingasagCentral {
+  background-image: url('../images/WhiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition: scale 0.3s ease, background-image 0.3s ease;
+}
+
+
+.BalingasagCentral:hover {
+  scale: 1.6;
+  background-image: url('../images/BCSBackground.png');
+  z-index: 1;
+}
+
+.BalingasagCentral:hover * {
+  visibility: hidden; 
+}
+
+
+
+
+.Brgy5AwardLogoMaker {
+  background-image: url('../images/WhiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition: scale 0.3s ease, background-image 0.3s ease;
+}
+
+
+.Brgy5AwardLogoMaker:hover {
+  scale: 1.6;
+  background-image: url('../images/Brgy5Background.png');
+  z-index: 1;
+}
+
+.Brgy5AwardLogoMaker:hover * {
+  visibility: hidden; 
+}
+
+
+
+
+.ArduinoAward {
+  background-image: url('../images/WhiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition: scale 0.3s ease, background-image 0.3s ease;
+}
+
+
+.ArduinoAward:hover {
+  scale: 1.6;
+  background-image: url('../images/ArduinoBackground.png');
+  z-index: 1;
+}
+
+.ArduinoAward:hover * {
+  visibility: hidden; 
 }
